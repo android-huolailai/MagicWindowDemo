@@ -47,7 +47,7 @@ public class SplashActivity extends AppCompatActivity {
       }
     });
     // testKey:  mLink 的 key, mLink的唯一标识,用于进行路由操作
-    MLink.getInstance(context).register("testKey", new MLinkCallback() {
+    MLink.getInstance(context).register("detailsKey", new MLinkCallback() {
       public void execute(Map paramMap, Uri uri, Context context) {
 
         //!!!!!!!!注意 此处有坑,如果你的SplashActivity转跳有延迟，那么在此处转跳的延迟必须大于前者转跳时间
